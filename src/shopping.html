@@ -1,59 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/src/css/css_output.css">
-</head>
-<body class="min-h-screen  dark:bg-black">
-  <div class="flex flex-row justify-between gap-2">
-    <div class="bg-gray-200 pt-2 w-2/3  m-0 flex flex-row justify-around    items-center space-y-2">
-
-     <div><img src="images/bag.jpeg" alt="bags" class="border-0 rounded-full h-28 mt-8  " />
-     </div>
-     <div class=" flex flex-col  border-0">
-      <p class="text-sm font-semibold text-black  px-1  mt-7">SHOP HERE</p>
-     <p class="leading-4 text-xs text-center text-gray-500 mt-5">Best deals available.  </p>
-     <button class="mt-10 px-0.5  bg-orange-300 text-white rounded hover:bg-rose-500 font-serif ">
-     Shop Now
-     </button>
-     </div>
-     
-    </div>
-    
-    <div class="flex flex-col  bg-gray-200 w-1/3 h-fit" >
-      <div class="pt-0.5 flex flex-row gap-2  ">
-      <div class="ml-2 mt-1">
-        <img src="images/footware.jpeg" alt="foot ware" class="w-20 h-10 rounded-full">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop Banner</title>
+    <link rel="stylesheet" href="/src/css/css_output.css" />
+  </head>
+  <body class="bg-white min-h-screen flex items-center justify-center">
+    <div class="w-full max-w-6xl mx-auto p-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Left Main Banner -->
+        <div
+          class="md:col-span-2 bg-white border border-gray-300 flex flex-col md:flex-row items-center p-6"
+        >
+          <div class="flex-shrink-0 w-full md:w-1/2 flex justify-center">
+            <img
+              src="images/bag.jpeg"
+              alt="Bag"
+              class="object-cover rounded-lg w-full h-64 md:h-80"
+            />
+          </div>
+          <div
+            class="flex flex-col justify-center items-center md:items-start w-full md:w-1/2 mt-6 md:mt-0 md:ml-8"
+          >
+            <h1 class="text-4xl md:text-5xl font-black italic mb-4 text-black">
+              LOREM IPSUM
+            </h1>
+            <p
+              class="text-lg md:text-xl text-black mb-8 text-center md:text-left"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            </p>
+            <button
+              class="bg-black text-white font-bold py-2 px-8 rounded hover:bg-gray-800 transition"
+            >
+              BUTTON
+            </button>
+          </div>
+        </div>
+        <!-- Right Side Cards -->
+        <div class="flex flex-col gap-6">
+          <!-- Card 1 -->
+          <div class="bg-white border border-gray-300 flex items-center p-6">
+            <img
+              src="images/footware.jpeg"
+              alt="Foot ware"
+              class="w-16 h-16 object-contain mr-4"
+            />
+            <div>
+              <p class="text-lg font-medium text-black">Lorem ipsum</p>
+              <button
+                class="mt-2 text-black font-bold tracking-wide hover:underline"
+              >
+                SHOP NOW
+              </button>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="bg-white border border-gray-300 flex items-center p-6">
+            <img
+              src="images/Screens.jpeg"
+              alt="Screens"
+              class="w-16 h-16 object-contain mr-4"
+            />
+            <div>
+              <p class="text-lg font-medium text-black">Lorem ipsum</p>
+              <button
+                class="mt-2 text-black font-bold tracking-wide hover:underline"
+              >
+                SHOP NOW
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="">
-        <p class="leading-4 text-xs text-gray-500   ">Buy your favorite quality foot wares here</p>
-       <button class="mt-2 px-1 bg-orange-300 text-white rounded hover:bg-stone-400 font-serif">Shop Now</button>
-      </div>
-
-     
-     
     </div>
-
-    <div class="flex flex-row bg-gray-200 ">
-      <div class="ml-2 mt-1">
-        <img src="images/Screens.jpeg" alt="Screens" class="w-20 h-12 rounded-full">
-      </div>
-      <div class="ml-2">
-        <p class="leading-4 text-xs   text-gray-500">Buy all sizes of quality screens here.</p>
-       <button class="mt-2 px-1 bg-orange-300 text-white rounded hover:bg-black font-serif mb-1.5">Shop Now</button>
-      </div>
-      
-    </div>
-    </div>
-
-
-    
-
-  </div>
-  
-</body>
-
+  </body>
 </html>
